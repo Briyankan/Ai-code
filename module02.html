@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Coding Assistant</title>
+
+<!-- Prism.js CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css"/>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="main-wrapper">
+
+  <!-- PAGE TITLE -->
+  <h1> AI Coding Assistant</h1>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 1 ▸ WHAT IS AN AI CODING ASSISTANT
+  ══════════════════════════════════════════ -->
+  <h2>1. What is an AI Coding Assistant?</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>
+        An <strong>AI Coding Assistant</strong> is a smart software tool that helps programmers
+        <strong>write</strong>, <strong>understand</strong>, and <strong>fix</strong> computer code.
+        It uses <strong>Artificial Intelligence</strong> to suggest code, complete unfinished code,
+        fix errors, and explain code in simple terms.
+      </p>
+
+      <div class="info-box">
+        &#128073; <strong>Simple meaning:</strong> It is like a <strong>smart helper</strong> for programmers
+        — just like autocomplete on your phone, but for writing programs!
+      </div>
+
+      <p>AI coding assistants are used by:</p>
+      <ul>
+        <li>Professional software developers</li>
+        <li>Students learning to code</li>
+        <li>Researchers and data scientists</li>
+        <li>Anyone who writes computer programs</li>
+      </ul>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="AI Coding Assistant"/>
+      <div class="img-caption">AI Coding Assistant</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 2 ▸ WHY DO WE NEED AI CODING ASSISTANTS
+  ══════════════════════════════════════════ -->
+  <h2>2. Why Do We Need AI Coding Assistants?</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>Programming can sometimes be difficult, time-consuming, and confusing — especially for beginners.
+         AI Coding Assistants solve these problems by making coding easier and faster.</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h5>&#128680; Programming Challenges</h5>
+          <ul>
+            <li>&#128533; Difficult to learn for beginners</li>
+            <li>&#8987; Time-consuming to write from scratch</li>
+            <li>&#128161; Confusing error messages</li>
+            <li>&#128202; Complex logic and algorithms</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>&#10024; How AI Assistants Help</h5>
+          <ul>
+            <li>&#9989; Save time by suggesting code instantly</li>
+            <li>&#9989; Reduce mistakes with smart corrections</li>
+            <li>&#9989; Help students learn faster</li>
+            <li>&#9989; Explain code in simple language</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Why AI Coding Assistants"/>
+      <div class="img-caption">Why We Need AI Assistants</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 3 ▸ POPULAR AI CODING ASSISTANTS
+  ══════════════════════════════════════════ -->
+  <h2>3. Popular AI Coding Assistants</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+
+      <!-- GitHub Copilot -->
+      <div class="tool-card">
+        <span class="tool-badge">&#128279; GitHub / Microsoft</span>
+        <h4>&#129302; GitHub Copilot</h4>
+        <ul class="feature-list">
+          <li>Suggests code automatically while you type</li>
+          <li>Works inside popular coding software (VS Code, JetBrains, etc.)</li>
+          <li>Predicts the next line or block of code</li>
+          <li>Supports many programming languages (Python, JavaScript, Java, etc.)</li>
+        </ul>
+      </div>
+
+      <!-- ChatGPT -->
+      <div class="tool-card">
+        <span class="tool-badge">&#128172; OpenAI</span>
+        <h4>&#129504; ChatGPT</h4>
+        <ul class="feature-list">
+          <li>Generates complete code from a description</li>
+          <li>Explains code step by step in plain language</li>
+          <li>Fixes bugs and debugging errors</li>
+          <li>Answers any programming question instantly</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Popular AI Coding Assistants"/>
+      <div class="img-caption">Popular AI Tools</div>
+    </div>
+  </div>
+
+  <!-- Comparison Table -->
+  <h3>Comparison: GitHub Copilot vs ChatGPT</h3>
+  <div class="ai-container">
+    <div class="ai-text">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>&#129302; GitHub Copilot</th>
+            <th>&#129504; ChatGPT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Developer</strong></td><td>GitHub / Microsoft</td><td>OpenAI</td></tr>
+          <tr><td><strong>Main Use</strong></td><td>Code completion inside IDE</td><td>Chat-based code generation</td></tr>
+          <tr><td><strong>Works In</strong></td><td>VS Code, JetBrains</td><td>Web browser / API</td></tr>
+          <tr><td><strong>Code Suggestion</strong></td><td>&#10003; Yes (real-time)</td><td>&#10003; Yes (on request)</td></tr>
+          <tr><td><strong>Explains Code</strong></td><td>Limited</td><td>&#10003; Yes (detailed)</td></tr>
+          <tr><td><strong>Fixes Bugs</strong></td><td>&#10003; Yes</td><td>&#10003; Yes</td></tr>
+          <tr><td><strong>Answers Questions</strong></td><td>&#10007; No</td><td>&#10003; Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Comparison Table"/>
+      <div class="img-caption">Copilot vs ChatGPT</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 4 ▸ HOW DO AI CODING ASSISTANTS WORK
+  ══════════════════════════════════════════ -->
+  <h2>4. How Do AI Coding Assistants Work?</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>AI coding assistants are powered by <strong>Large Language Models (LLMs)</strong> &#8212;
+         a type of AI trained on billions of lines of code and text. Here is how they work step by step:</p>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>Step</th><th>What Happens</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Step 1</strong></td><td>The AI is trained on <strong>millions of code examples</strong> from the internet (GitHub, open-source projects, documentation).</td></tr>
+          <tr><td><strong>Step 2</strong></td><td>It learns to <strong>recognize patterns</strong> &#8212; for example, how a function is structured, how loops work, how errors are fixed.</td></tr>
+          <tr><td><strong>Step 3</strong></td><td>When you type code, it <strong>predicts what comes next</strong> based on the patterns it learned.</td></tr>
+          <tr><td><strong>Step 4</strong></td><td>It shows a <strong>suggestion</strong> which you can accept, ignore, or modify.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="info-box">
+        <strong>&#128161; Example &#8212; Code Prediction:</strong><br><br>
+        If you type: <code>print("Hello</code><br>
+        The AI suggests: <code>World")</code><br><br>
+        This is called <strong>code prediction</strong> &#8212; just like word prediction on your phone keyboard!
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="How AI Coding Works"/>
+      <div class="img-caption">How It Works</div>
+    </div>
+  </div>
+
+  <!-- Code example -->
+  <h3>Code Example &#8211; AI Code Prediction in Python</h3>
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>Here is a simple example showing how an AI coding assistant might help complete your code:</p>
+
+      <pre class="language-python"><code># You type this (incomplete):
+def greet(name):
+    print("Hello,
+
+# AI Coding Assistant suggests completing it as:
+def greet(name):
+    print("Hello, " + name + "!")
+
+# You call the function:
+greet("Student")
+# Output: Hello, Student!
+</code></pre>
+
+      <p>In the example above, the AI recognised the pattern of a <code>print()</code> statement
+         inside a function and automatically suggested the correct completion.</p>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Code Prediction Example"/>
+      <div class="img-caption">Code Prediction</div>
+    </div>
+  </div>
+
+  <h3>Code Example &#8211; AI Bug Fixing</h3>
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>AI coding assistants can also <strong>detect and fix bugs</strong> in your code automatically:</p>
+
+      <pre class="language-python"><code># ❌ Code with a bug (missing colon):
+def add(a, b)
+    return a + b
+
+# ✅ AI Coding Assistant detects and fixes:
+def add(a, b):       # ← AI added the missing colon
+    return a + b
+
+# Test the fixed function:
+result = add(5, 3)
+print(result)  # Output: 8
+</code></pre>
+
+      <p>This process is called <strong>debugging</strong> &#8212; finding and fixing errors in code.
+         AI assistants can detect many common mistakes instantly.</p>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Bug Fixing Example"/>
+      <div class="img-caption">AI Bug Fixing</div>
+    </div>
+  </div>
+
+  <h3>Code Example &#8211; JavaScript Autocomplete</h3>
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>Here is a JavaScript example showing how AI can suggest an entire function:</p>
+
+      <pre class="language-javascript"><code>// You type a comment describing what you want:
+// Function to calculate the area of a rectangle
+
+// AI Coding Assistant generates the full function:
+function calculateArea(length, width) {
+    return length * width;
+}
+
+// Usage example:
+let area = calculateArea(10, 5);
+console.log("Area: " + area);
+// Output: Area: 50
+</code></pre>
+
+      <p>Notice that you only typed a <strong>comment</strong> describing the task,
+         and the AI generated the complete, working function for you!</p>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="JavaScript Autocomplete"/>
+      <div class="img-caption">JavaScript Autocomplete</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 5 ▸ ADVANTAGES
+  ══════════════════════════════════════════ -->
+  <h2>5. Advantages of AI Coding Assistants</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <div class="adv-card">&#9889; <div><strong>Faster Coding</strong> &#8212; AI suggests code instantly, saving hours of typing and searching.</div></div>
+      <div class="adv-card">&#10003; <div><strong>Fewer Mistakes</strong> &#8212; AI catches errors and typos before they cause problems.</div></div>
+      <div class="adv-card">&#127891; <div><strong>Helps Beginners</strong> &#8212; Students can learn from AI suggestions and understand new concepts faster.</div></div>
+      <div class="adv-card">&#128218; <div><strong>Explains Difficult Concepts</strong> &#8212; AI can describe what any piece of code does in plain English.</div></div>
+      <div class="adv-card">&#8987; <div><strong>Saves Time</strong> &#8212; Repetitive tasks like writing loops, functions and templates are done automatically.</div></div>
+      <div class="adv-card">&#127760; <div><strong>Supports Many Languages</strong> &#8212; Works with Python, JavaScript, Java, C++, HTML, CSS, and many more.</div></div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Advantages of AI Coding"/>
+      <div class="img-caption">Advantages</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 6 ▸ RISKS AND LIMITATIONS
+  ══════════════════════════════════════════ -->
+  <h2>6. Risks and Limitations of AI Coding Assistants</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <div class="risk-card">&#9888; <div><strong>AI Can Make Mistakes</strong> &#8212; AI suggestions are not always correct. The programmer must check carefully.</div></div>
+      <div class="risk-card">&#9888; <div><strong>Code May Not Always Be Correct</strong> &#8212; Suggestions may work in simple cases but fail in complex real-world situations.</div></div>
+      <div class="risk-card">&#9888; <div><strong>Students May Copy Without Understanding</strong> &#8212; Using AI without learning means you won't understand your own code.</div></div>
+      <div class="risk-card">&#9888; <div><strong>Security Problems May Occur</strong> &#8212; AI may suggest code that has hidden security vulnerabilities.</div></div>
+      <div class="risk-card">&#9888; <div><strong>Privacy Concerns</strong> &#8212; Code typed into AI tools may be stored or used for training the AI model.</div></div>
+
+      <div class="warning-box" style="margin-top:16px;">
+        &#128073; <strong>Important Rule:</strong> Always <strong>understand the code</strong> before using it.
+        Never copy AI-generated code without reviewing and testing it yourself!
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Risks of AI Coding"/>
+      <div class="img-caption">Risks &amp; Limitations</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 7 ▸ REAL-LIFE EXAMPLE
+  ══════════════════════════════════════════ -->
+  <h2>7. Real-Life Example</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>
+        When you type a message on your phone and it <strong>predicts the next word</strong>…
+        that is similar to how AI coding assistants predict the next line of code!
+      </p>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>Everyday Example</th><th>AI Coding Equivalent</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Phone keyboard predicts next word as you type a message</td>
+            <td>AI predicts next line of code as you type a function</td>
+          </tr>
+          <tr>
+            <td>Google Search autocomplete suggests search queries</td>
+            <td>GitHub Copilot suggests code completions</td>
+          </tr>
+          <tr>
+            <td>Spell-checker underlines misspelled words</td>
+            <td>AI coding assistant highlights code errors</td>
+          </tr>
+          <tr>
+            <td>Grammar checker suggests sentence improvements</td>
+            <td>AI suggests better, cleaner code alternatives</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Real Life Examples"/>
+      <div class="img-caption">Real-Life Analogy</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 8 ▸ KEY TERMS
+  ══════════════════════════════════════════ -->
+  <h2>8. Key Terms to Remember</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>Term</th><th>Meaning</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Artificial Intelligence</strong></td>
+            <td>Machines that can think, learn, and make decisions like humans.</td>
+          </tr>
+          <tr>
+            <td><strong>Code</strong></td>
+            <td>Instructions written in a programming language given to a computer to perform tasks.</td>
+          </tr>
+          <tr>
+            <td><strong>Prediction</strong></td>
+            <td>Using patterns learned from data to guess what comes next.</td>
+          </tr>
+          <tr>
+            <td><strong>Debugging</strong></td>
+            <td>The process of finding and fixing errors (bugs) in computer code.</td>
+          </tr>
+          <tr>
+            <td><strong>Autocomplete</strong></td>
+            <td>Automatically finishing text or code that has been started.</td>
+          </tr>
+          <tr>
+            <td><strong>Large Language Model (LLM)</strong></td>
+            <td>A powerful AI trained on massive amounts of text and code to understand and generate language.</td>
+          </tr>
+          <tr>
+            <td><strong>IDE</strong></td>
+            <td>Integrated Development Environment &#8212; a software tool used to write and run code (e.g. VS Code).</td>
+          </tr>
+          <tr>
+            <td><strong>Open Source</strong></td>
+            <td>Software or code that is publicly available for anyone to view, use, or modify.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Key Terms"/>
+      <div class="img-caption">Key Terms</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 9 ▸ QUESTIONS & ACTIVITIES
+  ══════════════════════════════════════════ -->
+  <h2>9. Questions &amp; Activities</h2>
+
+  <!-- Fill in the Blanks -->
+  <h3>Part A &#8211; Fill in the Blanks</h3>
+  <div id="fitb-l3">
+
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">1</span> An AI Coding Assistant helps programmers <input class="blank-input" data-answer="write" placeholder="write here">, understand, and fix code.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">2</span> GitHub Copilot was developed by <input class="blank-input" data-answer="github" placeholder="write here">.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">3</span> ChatGPT was created by <input class="blank-input" data-answer="openai" placeholder="write here">.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">4</span> AI coding assistants learn from millions of <input class="blank-input" data-answer="code examples" placeholder="write here">.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">5</span> The process of finding and fixing errors in code is called <input class="blank-input" data-answer="debugging" placeholder="write here">.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">6</span> Automatically finishing code that has been started is called <input class="blank-input" data-answer="autocomplete" placeholder="write here">.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">7</span> AI can predict the next line of code by recognising <input class="blank-input" data-answer="patterns" placeholder="write here">.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">8</span> Students should always <input class="blank-input" data-answer="understand" placeholder="write here"> AI-generated code before using it.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">9</span> One risk of using AI coding tools is <input class="blank-input" data-answer="security" placeholder="write here"> problems in suggested code.</div>
+    </div>
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">10</span> An IDE stands for Integrated Development <input class="blank-input" data-answer="environment" placeholder="write here">.</div>
+    </div>
+
+    <button class="btn-check-ans" onclick="checkFITB('fitb-l3')">&#10003; Check Answers</button>
+    <button class="btn-reset" onclick="resetFITB('fitb-l3')">&#8635; Reset</button>
+    <div id="fitb-l3-score"></div>
+  </div>
+
+  
+  
+
+  <!-- Short Answer Questions -->
+  <h3>Part C &#8211; Short Answer Questions</h3>
+  <p>Write your answers in the boxes below.</p>
+
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">1</span> What is an AI Coding Assistant? Give one example.</div>
+    <textarea class="short-answer" placeholder="Write your answer here..."></textarea>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">2</span> Explain how an AI coding assistant predicts the next line of code.</div>
+    <textarea class="short-answer" placeholder="Write your answer here..."></textarea>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">3</span> What is the difference between GitHub Copilot and ChatGPT?</div>
+    <textarea class="short-answer" placeholder="Write your answer here..."></textarea>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">4</span> Give two advantages of using AI coding assistants.</div>
+    <textarea class="short-answer" placeholder="Write your answer here..."></textarea>
+  </div>
+  <div class="q-block">
+    <div class="q-text"><span class="q-num">5</span> Why should students always understand code before using AI suggestions?</div>
+    <textarea class="short-answer" placeholder="Write your answer here..."></textarea>
+  </div>
+
+  <!-- Matching Activity -->
+  <h3>Part D &#8211; Match the Following</h3>
+  <p>Match each term in Column A with the correct definition in Column B.</p>
+  <div id="matching-l3">
+    <table class="table table-bordered">
+      <thead>
+        <tr><th>Column A &#8211; Term</th><th>Column B &#8211; Select Definition</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1. GitHub Copilot</strong></td>
+          <td><select class="match-select" data-answer="AI tool that suggests code inside your coding software">
+            <option value="">-- Select --</option>
+            <option>AI tool that suggests code inside your coding software</option>
+            <option>Process of finding and fixing errors in code</option>
+            <option>AI created by OpenAI that generates and explains code</option>
+            <option>Automatically finishing code that has been started</option>
+            <option>Machines that can think and learn</option>
+          </select></td></tr>
+        <tr><td><strong>2. ChatGPT</strong></td>
+          <td><select class="match-select" data-answer="AI created by OpenAI that generates and explains code">
+            <option value="">-- Select --</option>
+            <option>AI tool that suggests code inside your coding software</option>
+            <option>Process of finding and fixing errors in code</option>
+            <option>AI created by OpenAI that generates and explains code</option>
+            <option>Automatically finishing code that has been started</option>
+            <option>Machines that can think and learn</option>
+          </select></td></tr>
+        <tr><td><strong>3. Debugging</strong></td>
+          <td><select class="match-select" data-answer="Process of finding and fixing errors in code">
+            <option value="">-- Select --</option>
+            <option>AI tool that suggests code inside your coding software</option>
+            <option>Process of finding and fixing errors in code</option>
+            <option>AI created by OpenAI that generates and explains code</option>
+            <option>Automatically finishing code that has been started</option>
+            <option>Machines that can think and learn</option>
+          </select></td></tr>
+        <tr><td><strong>4. Autocomplete</strong></td>
+          <td><select class="match-select" data-answer="Automatically finishing code that has been started">
+            <option value="">-- Select --</option>
+            <option>AI tool that suggests code inside your coding software</option>
+            <option>Process of finding and fixing errors in code</option>
+            <option>AI created by OpenAI that generates and explains code</option>
+            <option>Automatically finishing code that has been started</option>
+            <option>Machines that can think and learn</option>
+          </select></td></tr>
+        <tr><td><strong>5. Artificial Intelligence</strong></td>
+          <td><select class="match-select" data-answer="Machines that can think and learn">
+            <option value="">-- Select --</option>
+            <option>AI tool that suggests code inside your coding software</option>
+            <option>Process of finding and fixing errors in code</option>
+            <option>AI created by OpenAI that generates and explains code</option>
+            <option>Automatically finishing code that has been started</option>
+            <option>Machines that can think and learn</option>
+          </select></td></tr>
+      </tbody>
+    </table>
+    <button class="btn-check-ans" onclick="checkMatchingTable('matching-l3','matching-l3-score')">&#10003; Check Matches</button>
+    <button class="btn-reset" onclick="resetMatchingTable('matching-l3','matching-l3-score')">&#8635; Reset</button>
+    <div id="matching-l3-score"></div>
+  </div>
+
+</div><!-- /main-wrapper -->
+
+<!-- Prism.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+<script src="module02.js"></script>
+</body>
+</html>
