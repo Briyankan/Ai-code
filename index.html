@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 4 – Prompt Engineering for Coding</title>
+
+<!-- Prism.js CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css"/>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="main-wrapper">
+
+  <!-- PAGE TITLE -->
+  <h1>Prompt Engineering for Coding</h1>
+  <p><em>Level: Grade 6+</em></p>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 1 ▸ INTRODUCTION
+  ══════════════════════════════════════════ -->
+  <h2>1. Introduction</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>
+        Artificial Intelligence (AI) tools like coding assistants can <strong>generate programs</strong>,
+        <strong>fix errors</strong>, and <strong>explain code</strong>. However, the quality of the
+        result depends entirely on <strong>how we ask the question</strong>.
+      </p>
+      <p>
+        If you ask a vague question, you get a vague answer. If you ask a clear, detailed question,
+        you get a much better result. This skill of writing clear and effective instructions for AI is called:
+      </p>
+
+      <div class="info-box" style="text-align:center; font-size:22px; font-weight:900; letter-spacing:2px; color:#1565c0;">
+        &#128161; PROMPT ENGINEERING
+      </div>
+
+      <p>In this lesson you will learn:</p>
+      <ul>
+        <li>What a <strong>prompt</strong> is</li>
+        <li>What <strong>prompt engineering</strong> means</li>
+        <li>How to write <strong>weak vs strong prompts</strong></li>
+        <li>The <strong>Prompt Power Formula</strong></li>
+        <li>How to use AI coding tools <strong>responsibly</strong></li>
+      </ul>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Prompt Engineering Introduction"/>
+      <div class="img-caption">Prompt Engineering</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 2 ▸ WHAT IS A PROMPT?
+  ══════════════════════════════════════════ -->
+  <h2>2. What is a Prompt?</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>
+        A <strong>prompt</strong> is the <strong>instruction or message</strong> you give to an
+        AI system. It is how you communicate with AI — just like how you would give instructions
+        to another person.
+      </p>
+
+      <h6>Example of a Simple (Weak) Prompt:</h6>
+      <div class="prompt-box">Create a website.</div>
+
+      <div class="warning-box">
+        &#9888; This is a <strong>weak prompt</strong> because it is not clear.
+        The AI does not know: What kind of website? What content? What language? What design?
+      </div>
+
+      <table class="table table-bordered" style="margin-top:14px;">
+        <thead>
+          <tr><th>Type</th><th>Example</th><th>Result</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&#10007; <strong>Weak Prompt</strong></td>
+            <td><code>Create a website.</code></td>
+            <td>AI may produce anything — usually not what you wanted.</td>
+          </tr>
+          <tr>
+            <td>&#10003; <strong>Strong Prompt</strong></td>
+            <td><code>Create a simple school homepage using HTML and CSS with a nav bar, welcome message, and blue color scheme.</code></td>
+            <td>AI produces exactly what was described.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="What is a Prompt"/>
+      <div class="img-caption">What is a Prompt?</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 3 ▸ WHAT IS PROMPT ENGINEERING?
+  ══════════════════════════════════════════ -->
+  <h2>3. What is Prompt Engineering?</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>
+        <strong>Prompt Engineering</strong> means writing <strong>clear</strong>,
+        <strong>detailed</strong>, and <strong>structured instructions</strong> to get
+        better results from AI.
+      </p>
+
+      <div class="info-box">
+        <strong>&#128161; Remember:</strong> AI does <strong>not</strong> read minds.
+        It only understands <strong>what we type</strong>. The more specific you are,
+        the better the result.
+      </div>
+
+      <p>Think of it like giving directions to someone:</p>
+      <ul>
+        <li>&#128683; <strong>Bad direction:</strong> "Go somewhere near the school."</li>
+        <li>&#9989; <strong>Good direction:</strong> "Turn left at the main gate, walk 50 metres, enter the second building on the right."</li>
+      </ul>
+      <p>The same principle applies to writing prompts for AI!</p>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="What is Prompt Engineering"/>
+      <div class="img-caption">Prompt Engineering</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 4 ▸ WHY PROMPT ENGINEERING IS IMPORTANT
+  ══════════════════════════════════════════ -->
+  <h2>4. Why Prompt Engineering is Important in Coding</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>When using AI for coding, the quality of the prompt directly affects the quality of the code:</p>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>Prompt Quality</th><th>Code Result</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&#10007; <strong>Weak prompt</strong></td>
+            <td>Weak, incomplete, confusing code</td>
+          </tr>
+          <tr>
+            <td>&#10003; <strong>Clear prompt</strong></td>
+            <td>Better, organised, working code</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h6>Good Prompt Engineering Helps You:</h6>
+      <ul>
+        <li>&#9989; <strong>Save time</strong> &#8212; get the right code on the first try</li>
+        <li>&#9989; <strong>Reduce mistakes</strong> &#8212; AI understands exactly what you need</li>
+        <li>&#9989; <strong>Generate cleaner code</strong> &#8212; well-structured, readable output</li>
+        <li>&#9989; <strong>Understand the solution better</strong> &#8212; ask AI to explain its code</li>
+      </ul>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Why Prompt Engineering is Important"/>
+      <div class="img-caption">Why It Matters</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 5 ▸ WEAK VS STRONG PROMPT
+  ══════════════════════════════════════════ -->
+  <h2>5. Weak Prompt vs Strong Prompt</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+
+      <div class="prompt-compare">
+        <!-- Weak -->
+        <div class="prompt-weak">
+          <div class="prompt-label">&#10007; WEAK PROMPT</div>
+          <div class="prompt-box">Make calculator</div>
+          <h6 style="color:#c0392b; margin-top:12px;">Problems:</h6>
+          <ul class="problem-list">
+            <li>Which programming language?</li>
+            <li>What type of calculator?</li>
+            <li>Who is it for?</li>
+            <li>How complex should it be?</li>
+            <li>No explanation requested</li>
+            <li>No design details given</li>
+          </ul>
+        </div>
+
+        <!-- Strong -->
+        <div class="prompt-strong">
+          <div class="prompt-label">&#10003; STRONG PROMPT</div>
+          <div class="prompt-box">Create a simple calculator using HTML and JavaScript.
+
+Requirements:
+- Two input boxes
+- Add and subtract buttons
+- Display result below
+- Simple design for beginners
+- Add comments in the code
+- Explain how the code works</div>
+          <h6 style="color:#1e8449; margin-top:12px;">Why it is better:</h6>
+          <ul class="good-list">
+            <li>Specifies the language (HTML + JavaScript)</li>
+            <li>Lists exact features needed</li>
+            <li>Sets difficulty level (beginner)</li>
+            <li>Asks for code comments</li>
+            <li>Requests an explanation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="success-box">
+        A strong prompt is: &#10004; <strong>Clear</strong> &nbsp; &#10004; <strong>Detailed</strong> &nbsp; &#10004; <strong>Structured</strong>
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Weak vs Strong Prompt"/>
+      <div class="img-caption">Weak vs Strong</div>
+    </div>
+  </div>
+
+  <!-- More comparison examples -->
+  <h3>More Weak vs Strong Prompt Examples</h3>
+  <div class="ai-container">
+    <div class="ai-text">
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>&#10007; Weak Prompt</th><th>&#10003; Strong Prompt</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>Make game</code></td>
+            <td><code>Create a number guessing game in Python for beginners. Use random numbers between 1 and 10. Give the player 3 chances. Print whether they won or lost. Add comments and explain each step.</code></td>
+          </tr>
+          <tr>
+            <td><code>Fix my code</code></td>
+            <td><code>I have a Python function that should add two numbers but it returns None. Please find the bug, fix it, and explain what was wrong.</code></td>
+          </tr>
+          <tr>
+            <td><code>Make a website</code></td>
+            <td><code>Create a school homepage using HTML and CSS. Include: a navigation bar, a welcome heading, a blue and white colour scheme, and a footer. Keep the design simple for students.</code></td>
+          </tr>
+          <tr>
+            <td><code>Explain loops</code></td>
+            <td><code>Explain Python for loops using 3 simple examples. Start with a basic counting example, then show looping through a list, then show a loop that skips even numbers. Explain each line.</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="More Prompt Examples"/>
+      <div class="img-caption">More Examples</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 6 ▸ THE PROMPT POWER FORMULA
+  ══════════════════════════════════════════ -->
+  <h2>6. The Prompt Power Formula</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>A strong coding prompt usually includes <strong>5 key parts</strong>. Follow this formula for best results:</p>
+
+      <div class="formula-step">
+        <div class="formula-num">1</div>
+        <div class="formula-body">
+          <div class="formula-title">&#127775; Role — Tell AI who it should act as</div>
+          <div class="formula-desc">Giving AI a role helps it produce more appropriate, focused answers.</div>
+          <div class="formula-example">Example: "You are a coding teacher helping a Grade 6 student."</div>
+        </div>
+      </div>
+
+      <div class="formula-step">
+        <div class="formula-num">2</div>
+        <div class="formula-body">
+          <div class="formula-title">&#127919; Task — Clearly describe what you want</div>
+          <div class="formula-desc">Be specific about the type of program or answer you need.</div>
+          <div class="formula-example">Example: "Create a number guessing game in Python."</div>
+        </div>
+      </div>
+
+      <div class="formula-step">
+        <div class="formula-num">3</div>
+        <div class="formula-body">
+          <div class="formula-title">&#128203; Requirements — List what must be included</div>
+          <div class="formula-desc">Bullet points work well here. Be as specific as possible.</div>
+          <div class="formula-example">Example:
+- Use random numbers between 1 and 10
+- Give the player 3 chances
+- Print whether they won or lost</div>
+        </div>
+      </div>
+
+      <div class="formula-step">
+        <div class="formula-num">4</div>
+        <div class="formula-body">
+          <div class="formula-title">&#128683; Constraints — Set limits or conditions</div>
+          <div class="formula-desc">Tell AI what NOT to include or what boundaries to stay within.</div>
+          <div class="formula-example">Example:
+- Keep it beginner friendly
+- Do not use advanced functions or libraries</div>
+        </div>
+      </div>
+
+      <div class="formula-step">
+        <div class="formula-num">5</div>
+        <div class="formula-body">
+          <div class="formula-title">&#128196; Output Format — Ask for explanation or formatting</div>
+          <div class="formula-desc">Tell AI how you want the answer structured.</div>
+          <div class="formula-example">Example: "Explain the code step by step after the program."</div>
+        </div>
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Prompt Power Formula"/>
+      <div class="img-caption">Prompt Power Formula</div>
+    </div>
+  </div>
+
+  <!-- Full Example Using the Formula -->
+  <h3>Full Example &#8211; Using the Prompt Power Formula</h3>
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>Here is a complete strong prompt built using all 5 parts of the formula:</p>
+
+      <pre class="language-text"><code>You are a coding teacher helping a Grade 6 beginner student. [ROLE]
+
+Create a number guessing game in Python. [TASK]
+
+Requirements: [REQUIREMENTS]
+- Use random numbers between 1 and 10
+- Give the player 3 chances to guess
+- Tell the player if their guess is too high or too low
+- Print a congratulations message if they win
+- Print the correct answer if they run out of chances
+
+Keep it beginner friendly and do not use classes
+or advanced functions. [CONSTRAINTS]
+
+After the code, explain each section step by step
+in simple English. [OUTPUT FORMAT]
+</code></pre>
+
+      <div class="success-box">
+        &#128161; <strong>Result:</strong> This prompt will produce clean, well-commented Python code
+        with a full step-by-step explanation — perfect for a beginner student!
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Full Prompt Example"/>
+      <div class="img-caption">Full Formula Example</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 7 ▸ HOW AI CODING ASSISTANTS WORK
+  ══════════════════════════════════════════ -->
+  <h2>7. How AI Coding Assistants Work</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>&#9989; AI Coding Assistants DO:</h5>
+          <ul>
+            <li>Learn from <strong>large amounts of code</strong></li>
+            <li>Recognize <strong>patterns</strong> in programming</li>
+            <li><strong>Predict</strong> what should come next</li>
+            <li>Generate code based on your instructions</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>&#10007; AI Coding Assistants DO NOT:</h5>
+          <ul>
+            <li>Think like humans</li>
+            <li>Understand emotions or context</li>
+            <li>Always give <strong>correct</strong> answers</li>
+            <li>Know your full project without being told</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning-box" style="margin-top:14px;">
+        &#128073; AI coding assistants are <strong>prediction tools</strong>, not human programmers.
+        They predict the most likely correct answer — but they can and do make mistakes!
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="How AI Works"/>
+      <div class="img-caption">How AI Works</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 8 ▸ COMMON MISTAKES IN PROMPT WRITING
+  ══════════════════════════════════════════ -->
+  <h2>8. Common Mistakes in Prompt Writing</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>Students often make these common mistakes when writing prompts for AI coding tools:</p>
+
+      <div class="mistake-card">&#10007; <div><strong>Writing very short prompts</strong> &#8212; "Make login page" gives AI almost no information to work with.</div></div>
+      <div class="mistake-card">&#10007; <div><strong>Forgetting to mention the programming language</strong> &#8212; AI may choose Python when you needed JavaScript!</div></div>
+      <div class="mistake-card">&#10007; <div><strong>Not asking for an explanation</strong> &#8212; You receive code but do not understand how it works.</div></div>
+      <div class="mistake-card">&#10007; <div><strong>Not mentioning skill level</strong> &#8212; AI may produce advanced code that is impossible for a beginner to understand.</div></div>
+      <div class="mistake-card">&#10007; <div><strong>Forgetting to specify design or output</strong> &#8212; AI does not know what the result should look like unless you tell it.</div></div>
+
+      <div class="success-box" style="margin-top:14px;">
+        <strong>&#10003; Quick Fix:</strong> Before sending a prompt, ask yourself —
+        <em>"Does AI have enough information to give me exactly what I want?"</em>
+        If not — add more details!
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Common Mistakes"/>
+      <div class="img-caption">Common Mistakes</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 9 ▸ RESPONSIBLE USE OF AI IN CODING
+  ══════════════════════════════════════════ -->
+  <h2>9. Responsible Use of AI in Coding</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>
+        AI is a <strong>tool</strong> &#8212; just like a calculator or a dictionary.
+        Using it well means using it to <strong>support your learning</strong>, not replace it.
+      </p>
+
+      <div class="rule-card">&#9989; <div><strong>Read and understand</strong> every line of code AI gives you before using it.</div></div>
+      <div class="rule-card">&#9989; <div><strong>Test the program</strong> yourself — run it, check if it works as expected.</div></div>
+      <div class="rule-card">&#9989; <div><strong>Modify the code</strong> yourself — change variable names, add features, make it your own.</div></div>
+      <div class="rule-card">&#9989; <div><strong>Never copy without learning</strong> &#8212; understanding matters more than the output.</div></div>
+
+      <div class="info-box" style="text-align:center; font-size:18px; font-weight:800; margin-top:16px;">
+        &#128161; Rule: <span style="color:#1565c0;">AI should assist your brain — not replace it.</span>
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Responsible AI Use"/>
+      <div class="img-caption">Responsible Use</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 10 ▸ KEY VOCABULARY
+  ══════════════════════════════════════════ -->
+  <h2>10. Key Vocabulary</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>Term</th><th>Meaning</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Prompt</strong></td><td>The instruction or message you give to an AI system.</td></tr>
+          <tr><td><strong>Prompt Engineering</strong></td><td>The skill of writing clear, detailed, and structured instructions to get better results from AI.</td></tr>
+          <tr><td><strong>Requirement</strong></td><td>A specific feature or condition that must be included in the result.</td></tr>
+          <tr><td><strong>Constraint</strong></td><td>A limitation or rule that tells AI what NOT to do or what limits to stay within.</td></tr>
+          <tr><td><strong>Debugging</strong></td><td>The process of finding and fixing errors in computer code.</td></tr>
+          <tr><td><strong>Prediction</strong></td><td>AI guessing what comes next based on patterns it has learned.</td></tr>
+          <tr><td><strong>Role</strong></td><td>Telling AI what type of expert to act as (e.g. "You are a coding teacher").</td></tr>
+          <tr><td><strong>Output Format</strong></td><td>Instructions telling AI how to present its answer (e.g. step-by-step, table, code only).</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Key Vocabulary"/>
+      <div class="img-caption">Key Vocabulary</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 11 ▸ PRACTICE EXERCISE
+  ══════════════════════════════════════════ -->
+  <h2>11. Practice Exercise &#8211; Build Your Own Strong Prompt</h2>
+
+  <div class="ai-container">
+    <div class="ai-text">
+      <p>
+        Below is a weak prompt. Your task is to <strong>rewrite it into a strong prompt</strong>
+        using the Prompt Power Formula. Fill in each field and click <strong>Build My Prompt</strong>
+        to see your complete strong prompt!
+      </p>
+
+      <div class="warning-box">
+        &#128073; <strong>Weak prompt to improve:</strong>
+        <div class="prompt-box" style="margin-top:10px;">Make game</div>
+        Add: Programming language &#8226; Rules &#8226; Target audience &#8226; Features &#8226; Explanation request
+      </div>
+    </div>
+    <div class="ai-image">
+      <img src="ai3.png" alt="Practice Exercise"/>
+      <div class="img-caption">Practice Exercise</div>
+    </div>
+  </div>
+
+  <div class="activity-card">
+    <div class="prompt-builder">
+      <h5 style="margin-top:0; background:none; padding:0; color:#1565c0;">&#9997;&#65039; Prompt Builder</h5>
+
+      <label>1. Role — Who should AI act as?</label>
+      <input type="text" id="pb-role" placeholder='e.g. You are a coding teacher helping a Grade 6 student.'/>
+
+      <label>2. Task — What do you want AI to create?</label>
+      <input type="text" id="pb-task" placeholder='e.g. Create a number guessing game in Python.'/>
+
+      <label>3. Requirements — What features must be included? (one per line)</label>
+      <textarea id="pb-req" rows="4" placeholder='e.g.&#10;- Use random numbers between 1 and 100&#10;- Give player 5 chances&#10;- Show if guess is too high or too low&#10;- Print result at the end'></textarea>
+
+      <label>4. Constraints — What limits or restrictions?</label>
+      <textarea id="pb-con" rows="2" placeholder='e.g. Keep it beginner friendly. Do not use classes or advanced libraries.'></textarea>
+
+      <label>5. Output Format — How should the answer be presented?</label>
+      <input type="text" id="pb-out" placeholder='e.g. Explain the code step by step after the program.'/>
+
+      <br>
+      <button class="btn-build" onclick="buildPrompt()">&#9889; Build My Prompt</button>
+      <button class="btn-clear-builder" onclick="clearBuilder()">&#8635; Clear</button>
+
+      <div id="prompt-result" style="display:none;">
+        <h6 style="margin-top:20px; color:#4D6804;">&#10003; Your Strong Prompt:</h6>
+        <div class="prompt-preview" id="prompt-output"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       QUESTIONS & ACTIVITIES
+  ══════════════════════════════════════════ -->
+  <h2>12. Questions &amp; Activities</h2>
+
+  <!-- Fill in the Blanks -->
+  <h3>Part A &#8211; Fill in the Blanks</h3>
+  <div id="fitb-l4">
+    <div class="q-block"><div class="q-text"><span class="q-num">1</span> A <input class="blank-input" data-answer="prompt" placeholder="write here"> is the instruction or message you give to an AI system.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">2</span> Prompt Engineering means writing <input class="blank-input" data-answer="clear" placeholder="write here">, detailed, and structured instructions.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">3</span> A weak prompt gives <input class="blank-input" data-answer="weak" placeholder="write here"> code results.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">4</span> The first step in the Prompt Power Formula is to give AI a <input class="blank-input" data-answer="role" placeholder="write here">.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">5</span> A <input class="blank-input" data-answer="constraint" placeholder="write here"> tells AI what NOT to include or what limits to stay within.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">6</span> Students should always <input class="blank-input" data-answer="understand" placeholder="write here"> code before using it.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">7</span> AI coding assistants are <input class="blank-input" data-answer="prediction" placeholder="write here"> tools, not human programmers.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">8</span> The <input class="blank-input" data-answer="output format" placeholder="write here"> part of the formula tells AI how to present its answer.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">9</span> AI should <input class="blank-input" data-answer="assist" placeholder="write here"> your brain, not replace it.</div></div>
+    <div class="q-block"><div class="q-text"><span class="q-num">10</span> Not mentioning the <input class="blank-input" data-answer="programming language" placeholder="write here"> is a common prompt writing mistake.</div></div>
+
+    <button class="btn-check-ans" onclick="checkFITB('fitb-l4')">&#10003; Check Answers</button>
+    <button class="btn-reset" onclick="resetFITB('fitb-l4')">&#8635; Reset</button>
+    <div id="fitb-l4-score"></div>
+  </div>
+
+  <!-- MCQ -->
+  <h3>Part B &#8211; Multiple Choice Questions</h3>
+  <div id="mcq-l4">
+
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">1</span> What is Prompt Engineering?</div>
+      <ul class="mcq-options" data-answer="1">
+        <li onclick="selectMCQ(this)"><span class="opt-label">A</span> Building robots with AI</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">B</span> Writing clear, detailed instructions to get better results from AI</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">C</span> Fixing broken computers</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">D</span> Designing websites</li>
+      </ul>
+    </div>
+
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">2</span> Which of these is a weak prompt?</div>
+      <ul class="mcq-options" data-answer="2">
+        <li onclick="selectMCQ(this)"><span class="opt-label">A</span> Create a Python quiz game with 5 questions, 3 answer choices, and a score counter</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">B</span> You are a coding teacher. Create a beginner HTML form with name and email fields</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">C</span> Make game</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">D</span> Explain Python for loops with 3 examples for beginners</li>
+      </ul>
+    </div>
+
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">3</span> What does the "Role" part of the Prompt Power Formula do?</div>
+      <ul class="mcq-options" data-answer="0">
+        <li onclick="selectMCQ(this)"><span class="opt-label">A</span> Tells AI who it should act as</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">B</span> Lists required features</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">C</span> Asks for an explanation</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">D</span> Sets limits and restrictions</li>
+      </ul>
+    </div>
+
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">4</span> Why should you mention the programming language in your prompt?</div>
+      <ul class="mcq-options" data-answer="2">
+        <li onclick="selectMCQ(this)"><span class="opt-label">A</span> It makes the prompt shorter</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">B</span> AI works faster with language names</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">C</span> AI may choose the wrong language otherwise</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">D</span> It is not necessary</li>
+      </ul>
+    </div>
+
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">5</span> What is a "Constraint" in the Prompt Power Formula?</div>
+      <ul class="mcq-options" data-answer="3">
+        <li onclick="selectMCQ(this)"><span class="opt-label">A</span> What you want AI to create</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">B</span> Who AI should act as</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">C</span> A feature that must be included</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">D</span> A limitation or rule telling AI what NOT to do</li>
+      </ul>
+    </div>
+
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">6</span> Which statement about AI coding assistants is TRUE?</div>
+      <ul class="mcq-options" data-answer="1">
+        <li onclick="selectMCQ(this)"><span class="opt-label">A</span> AI always gives 100% correct answers</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">B</span> AI is a prediction tool that can make mistakes</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">C</span> AI understands human emotions</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">D</span> AI thinks exactly like a human programmer</li>
+      </ul>
+    </div>
+
+    <div class="q-block">
+      <div class="q-text"><span class="q-num">7</span> What should students do AFTER receiving AI-generated code?</div>
+      <ul class="mcq-options" data-answer="2">
+        <li onclick="selectMCQ(this)"><span class="opt-label">A</span> Submit it immediately without reading</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">B</span> Delete it and write everything yourself</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">C</span> Read, understand, test, and modify the code</li>
+        <li onclick="selectMCQ(this)"><span class="opt-label">D</span> Share it online for others to use</li>
+      </ul>
+    </div>
+
+    <button class="btn-check-ans" onclick="checkMCQ('mcq-l4')">&#10003; Check Answers</button>
+    <button class="btn-reset" onclick="resetMCQ('mcq-l4')">&#8635; Reset</button>
+    <div id="mcq-l4-score"></div>
+  </div>
+
+  <!-- Match -->
+  <h3>Part C &#8211; Match the Following</h3>
+  <div id="matching-l4">
+    <table class="table table-bordered">
+      <thead><tr><th>Column A &#8211; Term</th><th>Column B &#8211; Select Definition</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1. Prompt</strong></td>
+          <td><select class="match-select" data-answer="The instruction or message given to an AI system">
+            <option value="">-- Select --</option>
+            <option>The instruction or message given to an AI system</option>
+            <option>Writing clear, detailed instructions for AI</option>
+            <option>A limitation telling AI what NOT to do</option>
+            <option>A specific feature that must be included</option>
+            <option>Telling AI what type of expert to act as</option>
+            <option>Finding and fixing errors in code</option>
+          </select></td></tr>
+        <tr><td><strong>2. Prompt Engineering</strong></td>
+          <td><select class="match-select" data-answer="Writing clear, detailed instructions for AI">
+            <option value="">-- Select --</option>
+            <option>The instruction or message given to an AI system</option>
+            <option>Writing clear, detailed instructions for AI</option>
+            <option>A limitation telling AI what NOT to do</option>
+            <option>A specific feature that must be included</option>
+            <option>Telling AI what type of expert to act as</option>
+            <option>Finding and fixing errors in code</option>
+          </select></td></tr>
+        <tr><td><strong>3. Constraint</strong></td>
+          <td><select class="match-select" data-answer="A limitation telling AI what NOT to do">
+            <option value="">-- Select --</option>
+            <option>The instruction or message given to an AI system</option>
+            <option>Writing clear, detailed instructions for AI</option>
+            <option>A limitation telling AI what NOT to do</option>
+            <option>A specific feature that must be included</option>
+            <option>Telling AI what type of expert to act as</option>
+            <option>Finding and fixing errors in code</option>
+          </select></td></tr>
+        <tr><td><strong>4. Requirement</strong></td>
+          <td><select class="match-select" data-answer="A specific feature that must be included">
+            <option value="">-- Select --</option>
+            <option>The instruction or message given to an AI system</option>
+            <option>Writing clear, detailed instructions for AI</option>
+            <option>A limitation telling AI what NOT to do</option>
+            <option>A specific feature that must be included</option>
+            <option>Telling AI what type of expert to act as</option>
+            <option>Finding and fixing errors in code</option>
+          </select></td></tr>
+        <tr><td><strong>5. Role</strong></td>
+          <td><select class="match-select" data-answer="Telling AI what type of expert to act as">
+            <option value="">-- Select --</option>
+            <option>The instruction or message given to an AI system</option>
+            <option>Writing clear, detailed instructions for AI</option>
+            <option>A limitation telling AI what NOT to do</option>
+            <option>A specific feature that must be included</option>
+            <option>Telling AI what type of expert to act as</option>
+            <option>Finding and fixing errors in code</option>
+          </select></td></tr>
+        <tr><td><strong>6. Debugging</strong></td>
+          <td><select class="match-select" data-answer="Finding and fixing errors in code">
+            <option value="">-- Select --</option>
+            <option>The instruction or message given to an AI system</option>
+            <option>Writing clear, detailed instructions for AI</option>
+            <option>A limitation telling AI what NOT to do</option>
+            <option>A specific feature that must be included</option>
+            <option>Telling AI what type of expert to act as</option>
+            <option>Finding and fixing errors in code</option>
+          </select></td></tr>
+      </tbody>
+    </table>
+    <button class="btn-check-ans" onclick="checkMatchingTable('matching-l4','matching-l4-score')">&#10003; Check Matches</button>
+    <button class="btn-reset" onclick="resetMatchingTable('matching-l4','matching-l4-score')">&#8635; Reset</button>
+    <div id="matching-l4-score"></div>
+  </div>
+
+  <!-- Short Answer -->
+  <h3>Part D &#8211; Short Answer Questions</h3>
+  <div class="q-block"><div class="q-text"><span class="q-num">1</span> What is prompt engineering? Why is it important?</div><textarea class="short-answer" placeholder="Write your answer here..."></textarea></div>
+  <div class="q-block"><div class="q-text"><span class="q-num">2</span> What are the 5 parts of the Prompt Power Formula?</div><textarea class="short-answer" placeholder="Write your answer here..."></textarea></div>
+  <div class="q-block"><div class="q-text"><span class="q-num">3</span> Give one example of a weak prompt and rewrite it as a strong prompt.</div><textarea class="short-answer" rows="6" placeholder="Weak prompt:&#10;Strong prompt:"></textarea></div>
+  <div class="q-block"><div class="q-text"><span class="q-num">4</span> Why should students never copy AI-generated code without understanding it?</div><textarea class="short-answer" placeholder="Write your answer here..."></textarea></div>
+  <div class="q-block"><div class="q-text"><span class="q-num">5</span> List 3 common mistakes students make when writing prompts.</div><textarea class="short-answer" placeholder="Write your answer here..."></textarea></div>
+
+</div><!-- /main-wrapper -->
+
+<!-- Prism.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
